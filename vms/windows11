@@ -1,0 +1,6 @@
+special notes:
+- download virIO drivers: [fedora virtIO drivers for Win11](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso) 
+- use virtIO drivers in configuring the Win11 VM, especially by configuring them to be mounted on booot   
+- when installing, storage might not show, click "Load driver" -> select the drive with the virtIO drivers
+- then "vioscsi" -> "w10" or if available "w11" -> "amd64"
+- now the drive should show up
