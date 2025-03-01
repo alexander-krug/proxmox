@@ -2,6 +2,7 @@ clear usb stick of partitions using fdisk
 
 create bootable usb
 replace sdX with the device name sourced by using "sudo lsblk"
+
 ```sudo dd if=/mnt/chromeos/MyFiles/Downloads/iso-files/openmediavault_7.0-32-amd64.iso of=/dev/sdX bs=4M status=progress conv=fdatasync```
 
 install openmediavault
@@ -11,14 +12,17 @@ take notes:
 
 prepare the disk for the backup data
 find the disk
+
 ```sudo lsblk```
 clear it of partitions 
+
 ```sudo fdisk /dev/sda```
 type "d" and hit enter, repeat until all partitions are deleted
 type "n" and enter through the options to create one big partition for the next step
 type "w" to write changes#
 
 create a filesystem
+
 ```sudo mkfs.ext4 /dev/sda1```
 
 under "Storage" -> "Shared folders"
