@@ -1,4 +1,4 @@
-# clear usb stick of partitions using fdisk
+[comment]: clear usb stick of partitions using fdisk
 
 # create bootable usb
 # replace sdX with the device name sourced by using "sudo lsblk"
