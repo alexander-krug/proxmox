@@ -39,5 +39,10 @@ under "Services" -> "NFS" -> "Shares"
 now create one NFS share per shared folder 
 client for proxmox-backup-server = IP of proxmox backup server (PBS)
 client for proxmox-native-backup = IP of proxmox server 
-options for both "insecure, rw, subtree_check"
+options for proxmox-backup-server: "insecure, rw, subtree_check, no_root_squash"
+options for proxmox-native-backup: "insecure, rw, subtree_check"
+
+
+# From ChatGPT: 
+no_root_squash: This option allows the root user on the client machine to have root privileges on the NFS server. By default, when NFS is mounted, the root user’s privileges are "squashed" to a less privileged user (such as nobody), but no_root_squash disables this behavior. It gives the client’s root user full access on the server's file system, which can be risky.
 
