@@ -1,5 +1,7 @@
 replace 10.10.10.X with the respective IPs
 
+set up the on-subscription PBS repo:
+under "Administration" choose "Add" and select "No-Subscription" and click "Add"
 
 make a mountpoint for the share
 
