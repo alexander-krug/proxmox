@@ -8,4 +8,7 @@ create ZFS pool with 2x NVME SSD
 ![image](https://github.com/user-attachments/assets/ac689913-3190-4b59-b420-b3a68d64f3dc)
 1. go to "Datacenter" -> "Storage" and "Add", choose "ZFS" and choose the pool just created, selecting the appropriate content types
 
-1. 
+Add proxmox backup server (PBS) as storage
+"Datacenter" -> "Storage" -> "Add" choose "Proxmox Backup Server"
+![image](https://github.com/user-attachments/assets/8970b4a4-23c5-4868-83df-687dde94b635)
+(the fingerprint can be retrieved from the PBS server under dashboard, on the bottom right there is button named "Show Fingerprint")
